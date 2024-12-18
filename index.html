@@ -10,6 +10,7 @@
     <body>
         <h1>Línea de tiempo de Grand Theft Auto: VI</h1>
             <div class="block">
+                <div class="last-updated" id="lastUpdated"></div>
                 <h2>12/12/2024</h2>
                     <h3 class="acotacion">22:59hs</h3>
                         <p>Grand Theft Auto: VI gana el premio al juego más esperado del año en los Game Awards 2024</p>
@@ -55,5 +56,12 @@
 
                    
             </div>
+
+            <script>
+                const lastModified = new Date(document.lastModified);
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+        
+                document.getElementById('lastUpdated').innerText = `Última actualización: ${lastModified.toLocaleDateString('es-ES', options)}`;
+            </script>
     </body>
 </html>

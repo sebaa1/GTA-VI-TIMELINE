@@ -87,3 +87,11 @@ a:hover {
     color: rgb(240, 198, 231);
     text-decoration: underline;
 }
+
+.last-updated {
+    font-size: 15px;
+    color: #a8edde;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 15px;
+}
